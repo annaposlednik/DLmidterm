@@ -1,0 +1,23 @@
+head>
+  <title>Rosetta Resume Reviewer</title>
+</head>
+<img src="icon.jpeg" alt="Rosetta Resume Reviewer Icon" width="800" height ="500">
+<body>
+    <h2>Welcome to Resume Reviewer!  </h2>
+    <p>A seamless way to filter and rank 100s of resumes for specified job or internship positions.</p>
+    <p>Talk to Rosetta, the chat bot, to get started today!.</p>
+</body>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "d05cd33b-253d-4db5-9731-02aa551afed6", // The ID of this integration.
+    region: "us-south", // The region your integration is hosted in.
+    serviceInstanceID: "4c433574-229a-4f85-a0fc-fb31a4216402", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+</html>
